@@ -36,6 +36,22 @@ __License:__ GPLv2 or later
 
 Now, we have already copied the core library files. Let's do copy some other helpers files that is provided to understand the integration process. The other files are not related to core library. 
 
+Add some environment variable that need in `config/sslcommerz.php`.
+Add some line in `.env`
+
+```
+PROJECT_PATH=http://localhost
+API_DOMAIN_URL=
+STORE_ID=yourStoreId
+STORE_PASSWORD=yourStorePassword
+```
+
+```
+API_DOMAIN_URL 
+	For Sandbox, use "https://sandbox.sslcommerz.com"
+	For Live, use "https://securepay.sslcommerz.com"
+```
+
 * __Step 4:__ Copy the `SslCommerzPaymentController` into your project's `Controllers` folder.
 
 * __Step 5:__ Copy the defined routes from `routes/web.php` into your project's route file.
