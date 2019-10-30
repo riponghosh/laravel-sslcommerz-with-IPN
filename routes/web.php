@@ -33,3 +33,7 @@ Route::post('/cancel', 'SslCommerzPaymentController@cancel');
 
 Route::post('/ipn', 'SslCommerzPaymentController@ipn');
 //SSLCOMMERZ END
+
+Route::get('/custom', 'CustomController@index');
+Route::post('/custom/pay', 'CustomController@store');
+Route::post('/custom/success', 'CustomController@success');

@@ -67,6 +67,7 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
+                    <a href="{{ url('/custom') }}">Custom</a>
                     <a href="{{ url('/example1') }}">Example1</a>
                     <a href="{{ url('/example2') }}">Example2</a>
                     @auth
